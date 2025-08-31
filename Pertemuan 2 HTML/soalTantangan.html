@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Soal Tantangan</title>
+</head>
+<body>
+  <h2>Radio Button</h2>
+  <form>
+    <p>Pilih paket:</p>
+    <input type="radio" name="paket" value="Basic"> Basic<br>
+    <input type="radio" name="paket" value="Pro"> Pro<br>
+    <input type="radio" name="paket" value="Enterprise"> Enterprise
+  </form>
+
+  <h2>Drop Down</h2>
+  <label for="kelas">Pilih Kelas:</label>
+  <select id="kelas" name="kelas">
+    <option value="A">Kelas A</option>
+    <option value="B">Kelas B</option>
+    <option value="C">Kelas C</option>
+  </select>
+
+  <h2>Text Area</h2>
+  <textarea name="pesan" rows="4" cols="40">Tulis pesan di sini...</textarea>
+
+  <h2> Frame Horizontal (Iframe)</h2>
+<div style="display: flex; flex-direction: column; height: 200px; border:1px solid black;">
+<iframe srcdoc="<p>Frame Atas</p>" style="flex:1; border:1px solid black;"></iframe>
+<iframe srcdoc="<p>Frame Bawah</p>" style="flex:1; border:1px solid black;"></iframe>
+</div>
+
+
+<h2> Frame Vertikal (Iframe)</h2>
+<div style="display: flex; height: 200px; border:1px solid black;">
+<iframe srcdoc="<p>Frame Kiri</p>" style="flex:1; border:1px solid black;"></iframe>
+<iframe srcdoc="<p>Frame Kanan</p>" style="flex:1; border:1px solid black;"></iframe>
+</div>
+
+
+<h2> Frame Gabungan Horizontal-Vertikal (Iframe)</h2>
+<div style="display: flex; flex-direction: column; height: 300px; border:1px solid black;">
+<iframe srcdoc="<p>Frame Atas (penuh)</p>" style="flex:1; border:1px solid black;"></iframe>
+<div style="display: flex; flex:1;">
+<iframe srcdoc="<p>Frame Bawah Kiri</p>" style="flex:1; border:1px solid black;"></iframe>
+<iframe srcdoc="<p>Frame Bawah Kanan</p>" style="flex:1; border:1px solid black;"></iframe>
+</div>
+</div>
+
+</body>
+</html>
