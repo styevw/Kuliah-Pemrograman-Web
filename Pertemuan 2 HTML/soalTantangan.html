@@ -23,28 +23,35 @@
   <h2>Text Area</h2>
   <textarea name="pesan" rows="4" cols="40">Tulis pesan di sini...</textarea>
 
-  <h2> Frame Horizontal (Iframe)</h2>
-<div style="display: flex; flex-direction: column; height: 200px; border:1px solid black;">
-<iframe srcdoc="<p>Frame Atas</p>" style="flex:1; border:1px solid black;"></iframe>
-<iframe srcdoc="<p>Frame Bawah</p>" style="flex:1; border:1px solid black;"></iframe>
-</div>
+  <h2> Frame Horizontal</h2>
+<table border="1">
+            <tr>
+                <td>Baris 1 kolom 1</td>
+                <td>Baris 1 kolom 2</td>
+            </tr> </table>
 
 
-<h2> Frame Vertikal (Iframe)</h2>
-<div style="display: flex; height: 200px; border:1px solid black;">
-<iframe srcdoc="<p>Frame Kiri</p>" style="flex:1; border:1px solid black;"></iframe>
-<iframe srcdoc="<p>Frame Kanan</p>" style="flex:1; border:1px solid black;"></iframe>
-</div>
+<h2> Frame Vertikal</h2>
+<table border="1">
+<tr>
+                <td>Baris 1 kolom 1</td>
+            </tr>
+            <tr>
+                <td>Baris 2 kolom 1</td>
+            </tr> </table>
 
 
-<h2> Frame Gabungan Horizontal-Vertikal (Iframe)</h2>
-<div style="display: flex; flex-direction: column; height: 300px; border:1px solid black;">
-<iframe srcdoc="<p>Frame Atas (penuh)</p>" style="flex:1; border:1px solid black;"></iframe>
-<div style="display: flex; flex:1;">
-<iframe srcdoc="<p>Frame Bawah Kiri</p>" style="flex:1; border:1px solid black;"></iframe>
-<iframe srcdoc="<p>Frame Bawah Kanan</p>" style="flex:1; border:1px solid black;"></iframe>
-</div>
-</div>
+<h2> Frame Gabungan Horizontal-Vertikal</h2>
+<table border="1">
+  <tr>
+    <td>Baris 1 kolom 1</td>
+    <td>Baris 1 kolom 2</td>
+  </tr>
+  <tr>
+    <td colspan="2">Baris 2 kolom 1</td>
+  </tr>
+  <tr> <td colspan="2">Baris 2 kolom 2</td>
+  </tr>
 
 </body>
 </html>
