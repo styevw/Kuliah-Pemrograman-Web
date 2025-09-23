@@ -47,6 +47,7 @@ html:
 .nav-links a:hover, .nav-links button:hover { color: #fff; }
 .nav-links a.active { color: #ec4899; font-weight: bold; }
 ```
+
 Di sini saya membuat navbar atau menu navigasi di atas halaman. Di bagian HTML, saya pakai nav class="navbar" sebagai wadahnya. Di dalamnya ada div class="logo" stev.dev /div untuk menampilkan nama/logo di sebelah kiri, lalu ada ul class="nav-links" yang isinya beberapa menu di sebelah kanan, yaitu "Tentang", "Proyek", "Tautan", dan juga tombol "Search".
 
 Bagian CSS dipakai untuk mengatur tampilannya. Saya buat navbar ini menempel di atas meskipun halaman digulir, pakai position: sticky; top: 0;. Tata letaknya diatur dengan flexbox supaya logo rata kiri dan menu rata kanan. Latar belakangnya saya kasih warna hitam transparan dengan efek blur, jadi kelihatan modern. Di bawah navbar ada garis tipis biar rapi.

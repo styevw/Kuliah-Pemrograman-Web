@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Membuat kalkulator sederhana</title>
+        <h1>Kalkulator Sederhana</h1>
+    </head>
+    <body>
+        <script lang="JavaScript">
+            document.write("Penjumlahan");
+            document.write("<br>");
+            var a = document.getElementById("txt1").value;
+            var b = document.getElementById("txt2").value;
+            var c = a + b;
+            document.write(c);
+
+            
+        </script>
+                <form>
+            <input type="text" id="txt1">
+            <input type="text" id="txt2">
+            <input type="button" value="+" onclick="document.getElementById('txt3').value=parseInt(document.getElementById('txt1').value)+parseInt(document.getElementById('txt2').value);">
+            <input type="text" id="txt3">
+        </form>
+
+    </body>
+</html>

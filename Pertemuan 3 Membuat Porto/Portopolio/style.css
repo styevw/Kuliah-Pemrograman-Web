@@ -6,7 +6,7 @@ body {
   color: #fff;
   line-height: 1.6;
 }
-
+nav-links
 
 #spotlight {
   position: fixed;
@@ -16,6 +16,7 @@ body {
   z-index: 0;
 }
 
+hidden
 
 .navbar {
   position: sticky; top: 0; z-index: 10;
@@ -151,7 +152,7 @@ section h2 { font-size: 2rem; margin-bottom: 1rem; }
   border-radius: 12px;
 }
 
-/* Contact */
+
 #contact form { display: flex; flex-direction: column; gap: 0.6rem; max-width: 500px; }
 #contact input, #contact textarea {
   padding: 0.6rem; border-radius: 6px; border: none;

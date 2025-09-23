@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Aditya Sulaiman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div id="spotlight"></div>
+
+  <nav class="navbar">
+    <div class="logo">stev.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">Tentang</a></li>
+      <li><a href="#projects" class="nav-link">Proyek</a></li>
+      <li><a href="#links" class="nav-link">Tautan</a></li>
+      <li><a href="image.html" class="nav-link">Image</a></li>
+      <li><button id="open-cmd">Search</button></li>
+    </ul>
+  </nav>
+
+  <header class="hero">   
+    <h1 class="glitch" data-text="stev.">Hai, Saya <span>Aditya Sulaiman</span></h1>
+    <img src="img/gue.jpg" alt="Foto Profil Aditya Sulaiman" width="200" height="200" class="profil-img neon-border"> 
+    <p>Pengembang yang bersemangat dengan<br>fokus pada pengalaman pengguna yang inovatif.</p>
+    <div class="hero-buttons">
+      <a href="image.html" class="btn primary">Moment Saya</a>
+    </div>
+  </header>
+
+ <section id="about" class="reveal">
+    <h2>Tentang Saya</h2>
+    <p>Perkenalkan nama saya Aditya Sulaiman, saya merupakan seorang mahasiswa di Universitas Negeri Makassar.</p>
+    <p>Di Universitas Negeri Makassar, saya mengambil jurusan Teknik Komputer dan Informatika, karena itu saya menyukai<br>
+      hal-hal yang berkaitan dengan teknologi terutama pada pengembangan kecerdasan buatan.<br>
+      Berikut adalah beberapa bahasa yang saya gunakan:
+    </p>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>PHP</span><span>C++</span><span>Python</span><span>Java</span>
+    </div>
+  </section>
+
+ 
+  <section id="projects" class="reveal">
+    <h2>Proyek yang Pernah saya Kembangkan</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Front End Dev – Website Penjualan</h3>
+        <p>Pada Proyek ini saya mengembangkan website berupa laporan penjualan yang saling terhubung satu sama lain
+          seperti laporan stok, laporan penjualan, laporan produk, dan laporan pelanggan.
+        </p>
+        <div class="tech-stack">
+            <strong>Teknologi:</strong> <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span>
+        </div>
+        <a href="https://github.com/styevw/website-penjualan" target="_blank" class="project-link">Kunjungi Proyek.</a>
+      </div>
+      <div class="project-card">
+        <h3>Study – Belajar Website Menggunakan HTML,CSS dan JS</h3>
+        <p>Pada Study ini saya sedang belajar untuk membuat sebuah website menggunakan bahasa HTML, CSS dan juga JavaScript.
+          Ini merupakan matakuliah saya di jurusan Teknik Informatika dan Komputer.
+        </p>
+        <div class="tech-stack">
+            <strong>Teknologi:</strong> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        </div>
+        <a href="https://github.com/styevw/Kuliah-Pemrograman-Web" target="_blank" class="project-link">Kunjungi Proyek.</a>
+      </div>
+      <div class="project-card">
+        <h3>Training – Belajar Menggunakan Bahasa C++</h3>
+        <p>Pada Training ini saya belajar menggunakan bahasa C++. Yang dimana pada pembelajaran ini saya belajar banyak hal
+          seperti Fungsi pada C++, Tipe data turunan, Tipe data bentukan, Teknik Sorting, Teknik Searching, Array dan masih banyak
+          lagi.
+        </p>
+        <div class="tech-stack">
+            <strong>Teknologi:</strong> <span>C++</span>
+        </div>
+         <a href="https://github.com/styevw/CPP" target="_blank" class="project-link">Kunjungi Proyek.</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="links" class="reveal">
+    <h2>Temukan Saya di</h2>
+    <div class="experience-list">
+      <div class="exp-card">
+        <div class="project-card">
+        <h3>Github</h3>
+        <p><a href="https://github.com/styevw" target="_blank" class="project-link">Kunjungi.</a></p>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="project-card">
+        <h3>Instagram</h3>
+       <p><a href="https://www.instagram.com/adxtev/" target="_blank" class="project-link">Kunjungi.</a></p>
+       </div>
+      </div>
+       <div class="exp-card">
+        <div class="project-card">
+        <h3>Linkedin</h3>
+        <p><a href="https://www.linkedin.com/in/aditya-sulaiman-655152324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="project-link">Kunjungi.</a></p>
+      </div> 
+      </div>
+    </div>
+  </section>
+
+
+  
+  <footer>
+    <p>© 2025 Stev — Dibangun dengan HTML, CSS, JS</p>
+  </footer>
+
+  <div id="cmd-palette" class="hidden">
+    <input type="text" id="cmd-input" placeholder="Cari bagian…" />
+    <ul id="cmd-results"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

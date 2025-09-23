@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Menghitung Menggunakan Rumus Bangun Ruang</title>
+    </head>
+    <body>
+         <form>
+            <input type="text" id="panjang" placeholder="Masukkan Panjang">
+            <input type="text" id="lebar" placeholder="Masukkan Lebar">
+            <input type="text" id="tinggi" placeholder="Masukkan Tinggi">
+            <input type="text" id="sisi" placeholder="Masukkan Sisi">
+            <input type="text" id="volume" placeholder="Volume">
+            <input type="text" id="luas" placeholder="Luas">
+            <input type="button" value="Hitung" onclick="hitung()">
+         </form>
+         <script lang="JavaScript">
+            function hitung(){
+                var p = document.getElementById("panjang").value;
+                var l = document.getElementById("lebar").value;
+                var t = document.getElementById("tinggi").value;
+                var s = document.getElementById("sisi").value;
+                var v = document.getElementById("volume").value;
+                var a = document.getElementById("luas").value;
+                if (p != "" && l != "" && t != ""){
+                    v = p * l * t;
+                    document.getElementById("volume").value = v;
+                }
+                if (p != "" && l != ""){
+                    a = p * l;
+                    document.getElementById("luas").value = a;
+                }
+                if (s != ""){
+                    a = s * s;
+                    document.getElementById("luas").value = a;
+                }
+            }
+        </script>
+    </body>
+</html>
