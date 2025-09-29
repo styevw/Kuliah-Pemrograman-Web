@@ -1,0 +1,15 @@
+/* Menggunakan font kustom */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Style untuk link navigasi yang aktif */
+.nav-link.active {
+    color: #ca8a04; /* yellow-600 */
+    border-bottom: 2px solid #ca8a04;
+    font-weight: 600; /* semi-bold */
+}
