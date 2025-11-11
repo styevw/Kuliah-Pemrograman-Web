@@ -1,0 +1,605 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kami - Tandu Tea</title>
+    
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="style.css">
+
+  
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: {
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+
+    <header class="bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+  
+            <a href="index" class="flex items-center space-x-3">
+                <img src="img/logo.jpg" alt="Logo Tandu Tea" class="w-25 h-12">
+            </a>
+       
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index" class="nav-link text-lg text-gray-600 hover:text-yellow-600 transition duration-300 pb-1">Utama</a></li>
+                <li><a href="produk" class="nav-link text-lg text-gray-600 hover:text-yellow-600 transition duration-300 pb-1 active">Produk</a></li>
+                <li><a href="kontak" class="nav-link text-lg text-gray-600 hover:text-yellow-600 transition duration-300 pb-1">Kontak</a></li>
+            </ul>
+       
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-yellow-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+      
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full left-0 shadow-lg border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index" class="block text-center rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-yellow-500 hover:text-white transition duration-300">Utama</a>
+                <a href="produk" class="block text-center rounded-md px-3 py-2 text-base font-medium text-gray-700 bg-yellow-100 text-yellow-800">Produk</a>
+                <a href="kontak" class="block text-center rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-yellow-500 hover:text-white transition duration-300">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+  
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-display font-bold text-gray-900">Menu Andalan Kami</h1>
+            <p class="text-xl text-gray-600 mt-3">Menyajikan kesegaran teh pilihan untuk Anda</p>
+        </div>
+
+      
+        <div class="mt-12">
+            <h2 class="text-4xl font-display font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-4 mb-12">Varian Rasa</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/thaitea.jpg" alt="Thai Tea" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-3 right-3 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-y-2 group-hover:translate-y-0">
+                            Paling Laris
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Thai Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Racikan teh susu spesial andalan kami dengan rasa yang otentik.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+          
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/lemonlecy.jpg" alt="Lemon Tea" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Lemon Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Perpaduan teh dan lemon yang menyegarkan dahaga.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/lemonlecy.jpg" alt="Lecy Tea" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Lecy Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kesegaran teh dengan manisnya buah leci asli dan menyegarkan.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+     
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/milo.jpg" alt="Milo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Milo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman cokelat Milo favorit semua kalangan, disajikan dingin.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+                
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/coklat.jpg" alt="Cokelat" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Cokelat</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Rasa cokelat klasik yang pekat dan nikmat.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+                
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/vanilla.jpg" alt="Vanilla" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Vanilla</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Rasa vanilla yang lembut dan manis, cocok untuk bersantai.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/milktea.jpg" alt="Milk Tea" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Milk Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Perpaduan teh hitam dan susu yang klasik dan creamy.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/redvelvet.jpg" alt="Red Velvet" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Red Velvet</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Rasa kue red velvet yang unik dalam segelas minuman dingin.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 10.000</p>
+                    </div>
+                </div>
+
+              
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/greentea.jpg" alt="Green Tea" class="w-full h-56 object-cover bg-gray-200 group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Green Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Teh hijau otentik dengan sentuhan rasa yang menenangkan.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+ 
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/milotea.jpg" alt="Milo Tea" class="w-full h-56 object-cover bg-gray-200 group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Milo Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kombinasi unik antara teh, susu, dan cokelat Milo.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+      
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/varianoreo.jpg" alt="Varian Oreo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Varian Oreo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman creamy dengan taburan biskuit Oreo yang renyah.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+   
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/tiramisu.jpg" alt="Tiramisu" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Tiramisu</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Rasa kopi dan keju khas tiramisu yang mewah.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+    
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/vanillaicekopi.jpg" alt="Vanilla Ice Coffee" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Vanilla Ice Coffee</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Es kopi dengan sentuhan sirup vanilla yang manis.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+       
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/mangojely.jpg" alt="Manggo Jelly" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Manggo Jelly</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman rasa mangga segar dengan potongan jeli kenyal.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/lecycemara.png" alt="Lecy Cemara" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Lecy Cemara</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman leci dengan sensasi rasa cemara yang unik.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/peachjelly.jpg" alt="Peach Jelly" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Peach Jelly</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kesegaran buah peach berpadu dengan kenyalnya jeli.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+
+         
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/brownsugar.jpg" alt="Brown Sugar Boba Milk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Brown Sugar Boba Milk</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Susu segar dengan sirup gula aren dan boba yang kenyal.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/matchalatte.jpg" alt="Matcha Latte" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Matcha Latte</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Bubuk matcha premium dicampur dengan susu creamy.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+          
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/cappucino.jpg" alt="Cappucino" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Cappucino</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kopi dengan susu dan busa tebal, disajikan dingin.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/darkcoklat.jpg" alt="Dark Coklat" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Dark Coklat</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Untuk pecinta cokelat sejati, rasa yang lebih pekat.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+                
+       
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/dalgona.jpg" alt="Dalgona Coffee" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Dalgona Coffee</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kopi viral dengan busa lembut di atas susu segar.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+ 
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/taro.jpg" alt="Taro" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Taro</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Rasa talas yang manis dan unik dengan warna ungu khas.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/kopigularen.jpg" alt="Kopi Gula Aren" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Kopi Gula Aren</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Es kopi susu kekinian dengan manis legit dari gula aren.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <div class="relative">
+                        <img src="img/lotusmilk.jpg" alt="Lotus Milk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Lotus Milk</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Susu dengan selai dan biskuit lotus biscoff yang karamel.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 20.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="mt-20">
+            <h2 class="text-4xl font-display font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-4 mb-12">Varian Buah</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+       
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/alpucokori.jpg" alt="Alpucok Original" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Alpucok Original</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat kocok original dengan susu cokelat kental.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+      
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/alpucokoreo.jpg" alt="Alpucok Oreo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Alpucok Oreo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat kocok dengan taburan biskuit Oreo melimpah.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 18.000</p>
+                    </div>
+                </div>
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/alpucokmilo.jpg" alt="Alpucok Milo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Alpucok Milo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kombinasi alpukat kocok dengan bubuk Milo yang nikmat.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 18.000</p>
+                    </div>
+                </div>
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/alpucokeju.jpg" alt="Alpucok Keju" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Alpucok Keju</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat kocok dengan topping keju parut yang gurih.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 18.000</p>
+                    </div>
+                </div>
+         
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/manggamilk.jpg" alt="Mangga Milk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Mangga Milk</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman susu dengan puree buah mangga asli.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/nagamilk.jpg" alt="Naga Milk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Naga Milk</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Susu segar berpadu dengan jus buah naga yang kaya rasa.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="mt-20">
+            <h2 class="text-4xl font-display font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-4 mb-12">Varian Moctail</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/bluelagon.jpg" alt="Blue Lagon" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Blue Lagon</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Soda biru dengan sirup leci yang eksotis dan menyegarkan.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+               
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/mangosquash.jpg" alt="Manggo Squash" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Manggo Squash</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Minuman soda dengan sari buah mangga yang segar.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/stroberysquash.jpg" alt="Strawberry Squash" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Strawberry Squash</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kesegaran soda berpadu dengan manisnya buah stroberi.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+              
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/mojitomint.jpg" alt="Mojito Mint" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Mojito Mint</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Soda dengan perasan jeruk nipis dan daun mint segar.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 13.000</p>
+                    </div>
+                </div>
+          
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/passiontea.jpg" alt="Passion Tea" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Passion Tea</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Teh dengan sirup markisa yang memberikan rasa tropis.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 15.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-20">
+            <h2 class="text-4xl font-display font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-4 mb-12">Alpukat Serut</h2>
+             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+       
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serutori.png" alt="Serut Original" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut Original</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat serut segar dengan topping susu kental manis.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 30.000</p>
+                    </div>
+                </div>
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serutmilo.png" alt="Serut Milo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut Milo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat serut dengan taburan bubuk Milo yang melimpah.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 30.000</p>
+                    </div>
+                </div>
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serutoreo.png" alt="Serut Oreo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut Oreo</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Kombinasi alpukat serut dan remahan biskuit Oreo.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 30.000</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serutkeju.png" alt="Serut Keju" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut Keju</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Alpukat serut dengan parutan keju cheddar yang gurih.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 33.000</p>
+                    </div>
+                </div>
+              
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serut2toping.png" alt="Serut 2 Toping" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut 2 Toping</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Pilih dua topping favoritmu untuk alpukat serutmu.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 33.000</p>
+                    </div>
+                </div>
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col text-center">
+                    <img src="img/serut3toping.png" alt="Serut 3 Toping" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-yellow-700 transition-colors duration-300">Serut 3 Toping</h3>
+                        <p class="text-gray-600 mt-2 text-sm flex-grow">Makin ramai dengan tiga pilihan topping di atas alpukat serut.</p>
+                        <p class="mt-4 text-2xl font-bold text-yellow-600">Rp 35.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="mt-20">
+            <h2 class="text-4xl font-display font-bold text-center text-gray-800 border-b-2 border-yellow-500 pb-4 mb-12">Topping Pelengkap</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+            
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl w-48 text-center group">
+                    <img src="img/silky.png" alt="Topping Silky Pudding" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors duration-300">Silky</p>
+                        <p class="text-md font-bold text-yellow-600">+ Rp 5.000</p>
+                    </div>
+                </div>
+             
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl w-48 text-center group">
+                    <img src="img/jelly.png" alt="Topping Jelly" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors duration-300">Jelly</p>
+                        <p class="text-md font-bold text-yellow-600">+ Rp 5.000</p>
+                    </div>
+                </div>
+         
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl w-48 text-center group">
+                    <img src="img/oreo.png" alt="Topping Oreo" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors duration-300">Oreo</p>
+                        <p class="text-md font-bold text-yellow-600">+ Rp 5.000</p>
+                    </div>
+                </div>
+           
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl w-48 text-center group">
+                    <img src="img/boba.png" alt="Topping Boba" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 group-hover:text-yellow-700 transition-colors duration-300">Boba</p>
+                        <p class="text-md font-bold text-yellow-600">+ Rp 5.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-white mt-16 border-t border-gray-200">
+        <div class="container mx-auto px-6 py-8">
+             <div class="flex justify-center mb-6 space-x-6">
+                <a href="https://www.instagram.com/tandu.tea/" class="text-gray-500 hover:text-yellow-600 transition-colors duration-300">
+                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.623c-2.403 0-2.748.01-3.725.058-.926.045-1.555.2-2.086.411a3.287 3.287 0 00-1.164.763c-.45.45-.67 1-.763 1.164-.21.531-.366 1.16-.411 2.086-.048.977-.058 1.322-.058 3.725s.01 2.748.058 3.725c.045.926.2 1.554.411 2.086.093.465.313.914.763 1.164.45.45 1 .67 1.164.763.531.21 1.16.366 2.086.411.977.048 1.322.058 3.725.058s2.748-.01 3.725-.058c.926-.045 1.555-.2 2.086-.411.465-.093.914-.313 1.164-.763.45-.45.67-1 .763-1.164.21-.531.366-1.16.411-2.086.048-.977.058-1.322.058-3.725s-.01-2.748-.058-3.725c-.045-.926-.2-1.555-.411-2.086-.093-.465-.313-.914-.763-1.164a3.287 3.287 0 00-1.164-.763c-.531-.21-1.16-.366-2.086-.411-.977-.048-1.322-.058-3.725-.058zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 14a2 2 0 110-4 2 2 0 010 4zm6.406-7.185a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+            <p class="text-center text-gray-500">
+                &copy; 2025 Tandu Tea A.S. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
