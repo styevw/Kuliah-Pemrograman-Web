@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    
+    public function up(): void
+    {
+        Schema::table('guestbooks', function (Blueprint $table) {
+            if (!Schema::hasColumn('guestbooks', 'message_sentiment')) {
+                $table->string('message_sentiment')->nullable()->after('message');
+            }
+        });
+    }
+
+  
+    public function down(): void
+    {
+        Schema::table('guestbooks', function (Blueprint $table) {
+            if (Schema::hasColumn('guestbooks', 'message_sentiment')) {
+                $table->dropColumn('message_sentiment');
+            }
+        });
+    }
+};
